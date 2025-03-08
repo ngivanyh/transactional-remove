@@ -8,7 +8,7 @@ with open("README.md") as f:
 
 setup(
     name="transactional_remove",
-    version="1.0.4",
+    version="1.0.6",
     packages=["trm"],
     install_requires=req,
     entry_points={
@@ -17,5 +17,9 @@ setup(
         ],
     },
     long_description=long_desc,
-    long_description_content_type="text/markdown"
+    long_description_content_type="text/markdown",
+    # include_package_data=True,
+    # package_data={
+    #     "trm": ["trm.sql", "rm_data/*"],  # Include trm.sql and all files in rm_data
+    # },
 )

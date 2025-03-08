@@ -2,3 +2,4 @@ build/
 dist/
 transactional_remove.egg-info/
 venv/
+trm/__pycache__/**
