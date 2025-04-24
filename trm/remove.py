@@ -13,7 +13,7 @@ def state(item):
     elif path.islink(item):
         return LINK
 
-def rm(item):
+def remove(item):
     type = state(item)
     match type:
         case "file": log(item, type, RM); '''save(item); os.remove(item)'''
